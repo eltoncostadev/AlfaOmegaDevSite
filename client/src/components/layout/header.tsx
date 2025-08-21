@@ -69,14 +69,13 @@ export default function Header() {
             </SheetContent>
           </Sheet>
 
-          {/* Logo and Company Name (Right) */}
-          <div className="flex items-center space-x-4">
+          {/* Logo (Right) */}
+          <div className="flex items-center">
             <img 
               src={logoImage} 
               alt="Alfa e Omega Dev Logo" 
-              className="h-12 w-auto"
+              className="h-16 w-auto"
             />
-            <span className="text-xl font-bold text-white hidden sm:block">Alfa e Omega Dev</span>
           </div>
         </div>
       </div>
