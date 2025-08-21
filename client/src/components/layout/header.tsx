@@ -2,6 +2,7 @@ import { useState, useEffect } from "react";
 import { Code, Menu, X } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import { Sheet, SheetContent, SheetTrigger } from "@/components/ui/sheet";
+import logoImage from "@assets/logo-topo_1755810518193.png";
 
 const navigationItems = [
   { href: "#sobre", label: "Sobre Nós" },
@@ -30,7 +31,7 @@ export default function Header() {
   };
 
   return (
-    <header className="fixed top-0 left-0 right-0 bg-white/95 backdrop-blur-sm border-b border-blue-200 z-50">
+    <header className="fixed top-0 left-0 right-0 bg-gradient-to-r from-slate-900 via-blue-900 to-slate-900 backdrop-blur-sm border-b border-cyan-300/30 z-50 shadow-lg">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex justify-between items-center h-16">
           {/* Navigation Menu (Left) - Desktop */}
@@ -39,7 +40,7 @@ export default function Header() {
               <button
                 key={item.href}
                 onClick={() => handleNavClick(item.href)}
-                className="text-blue-700 hover:text-primary transition-colors duration-200 font-medium"
+                className="text-cyan-200 hover:text-cyan-100 transition-colors duration-200 font-medium"
               >
                 {item.label}
               </button>
@@ -49,17 +50,17 @@ export default function Header() {
           {/* Mobile Menu */}
           <Sheet open={isOpen} onOpenChange={setIsOpen}>
             <SheetTrigger asChild>
-              <Button variant="ghost" size="icon" className="md:hidden">
+              <Button variant="ghost" size="icon" className="md:hidden text-cyan-200 hover:text-cyan-100">
                 <Menu className="h-6 w-6" />
               </Button>
             </SheetTrigger>
-            <SheetContent side="left" className="w-[300px] sm:w-[400px]">
+            <SheetContent side="left" className="w-[300px] sm:w-[400px] bg-slate-900 border-cyan-300/30">
               <nav className="flex flex-col space-y-4 mt-8">
                 {navigationItems.map((item) => (
                   <button
                     key={item.href}
                     onClick={() => handleNavClick(item.href)}
-                    className="text-left text-blue-700 hover:text-primary transition-colors duration-200 font-medium py-2 px-4 rounded-md hover:bg-blue-50"
+                    className="text-left text-cyan-200 hover:text-cyan-100 transition-colors duration-200 font-medium py-2 px-4 rounded-md hover:bg-slate-800"
                   >
                     {item.label}
                   </button>
@@ -69,11 +70,13 @@ export default function Header() {
           </Sheet>
 
           {/* Logo and Company Name (Right) */}
-          <div className="flex items-center space-x-3">
-            <div className="w-10 h-10 bg-gradient-to-br from-primary to-secondary rounded-lg flex items-center justify-center">
-              <Code className="text-white text-lg" />
-            </div>
-            <span className="text-xl font-bold text-blue-900">Alfa e Omega Dev</span>
+          <div className="flex items-center space-x-4">
+            <img 
+              src={logoImage} 
+              alt="Alfa e Omega Dev Logo" 
+              className="h-12 w-auto"
+            />
+            <span className="text-xl font-bold text-white hidden sm:block">Alfa e Omega Dev</span>
           </div>
         </div>
       </div>

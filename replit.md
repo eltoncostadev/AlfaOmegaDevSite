@@ -6,6 +6,11 @@ This is a full-stack web application for "Alfa e Omega Dev," a software developm
 
 Preferred communication style: Simple, everyday language.
 
+## Design Preferences
+- Color scheme: Blue tones throughout the website (updated August 2025)
+- Logo: Custom logo with cyan-to-purple gradient integrated in header
+- Header: Dark gradient background (slate-900 to blue-900) to complement logo colors
+
 # System Architecture
 
 ## Frontend Architecture
