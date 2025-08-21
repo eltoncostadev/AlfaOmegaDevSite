@@ -33,7 +33,7 @@ export default function Header() {
   return (
     <header className="fixed top-0 left-0 right-0 bg-gradient-to-r from-slate-900 via-blue-900 to-slate-900 backdrop-blur-sm border-b border-cyan-300/30 z-50 shadow-lg">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-        <div className="flex justify-between items-center h-16">
+        <div className="flex justify-between items-center h-20">
           {/* Navigation Menu (Left) - Desktop */}
           <nav className="hidden md:flex space-x-8">
             {navigationItems.map((item) => (
@@ -74,7 +74,7 @@ export default function Header() {
             <img 
               src={logoImage} 
               alt="Alfa e Omega Dev Logo" 
-              className="h-16 w-auto"
+              className="h-16 w-auto sm:h-18 md:h-20 lg:h-24"
             />
           </div>
         </div>
