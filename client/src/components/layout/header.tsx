@@ -30,7 +30,7 @@ export default function Header() {
   };
 
   return (
-    <header className="fixed top-0 left-0 right-0 bg-white/95 backdrop-blur-sm border-b border-slate-200 z-50">
+    <header className="fixed top-0 left-0 right-0 bg-white/95 backdrop-blur-sm border-b border-blue-200 z-50">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex justify-between items-center h-16">
           {/* Navigation Menu (Left) - Desktop */}
@@ -39,7 +39,7 @@ export default function Header() {
               <button
                 key={item.href}
                 onClick={() => handleNavClick(item.href)}
-                className="text-slate-600 hover:text-primary transition-colors duration-200 font-medium"
+                className="text-blue-700 hover:text-primary transition-colors duration-200 font-medium"
               >
                 {item.label}
               </button>
@@ -59,7 +59,7 @@ export default function Header() {
                   <button
                     key={item.href}
                     onClick={() => handleNavClick(item.href)}
-                    className="text-left text-slate-600 hover:text-primary transition-colors duration-200 font-medium py-2 px-4 rounded-md hover:bg-slate-50"
+                    className="text-left text-blue-700 hover:text-primary transition-colors duration-200 font-medium py-2 px-4 rounded-md hover:bg-blue-50"
                   >
                     {item.label}
                   </button>
@@ -73,7 +73,7 @@ export default function Header() {
             <div className="w-10 h-10 bg-gradient-to-br from-primary to-secondary rounded-lg flex items-center justify-center">
               <Code className="text-white text-lg" />
             </div>
-            <span className="text-xl font-bold text-slate-800">Alfa e Omega Dev</span>
+            <span className="text-xl font-bold text-blue-900">Alfa e Omega Dev</span>
           </div>
         </div>
       </div>

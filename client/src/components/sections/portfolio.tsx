@@ -46,8 +46,8 @@ export default function Portfolio() {
     <section id="portfolio" className="py-20 bg-slate-50">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="text-center mb-16">
-          <h2 className="text-3xl lg:text-4xl font-bold text-slate-800 mb-4">Portfólio</h2>
-          <p className="text-lg text-slate-600 max-w-2xl mx-auto">
+          <h2 className="text-3xl lg:text-4xl font-bold text-blue-900 mb-4">Portfólio</h2>
+          <p className="text-lg text-blue-700 max-w-2xl mx-auto">
             Conheça alguns dos projetos que desenvolvemos para nossos clientes
           </p>
         </div>
@@ -61,8 +61,8 @@ export default function Portfolio() {
                 className="w-full h-48 object-cover"
               />
               <CardContent className="p-6">
-                <h3 className="text-xl font-semibold text-slate-800 mb-2">{item.title}</h3>
-                <p className="text-slate-600 mb-4">{item.description}</p>
+                <h3 className="text-xl font-semibold text-blue-800 mb-2">{item.title}</h3>
+                <p className="text-blue-700 mb-4">{item.description}</p>
                 <div className="flex flex-wrap gap-2 mb-4">
                   {item.technologies.map((tech, techIndex) => (
                     <Badge key={techIndex} variant="secondary" className="text-xs">

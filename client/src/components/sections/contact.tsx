@@ -57,8 +57,8 @@ export default function Contact() {
     <section id="contato" className="py-20 bg-white">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="text-center mb-16">
-          <h2 className="text-3xl lg:text-4xl font-bold text-slate-800 mb-4">Fale Conosco</h2>
-          <p className="text-lg text-slate-600 max-w-2xl mx-auto">
+          <h2 className="text-3xl lg:text-4xl font-bold text-blue-900 mb-4">Fale Conosco</h2>
+          <p className="text-lg text-blue-700 max-w-2xl mx-auto">
             Vamos conversar sobre como podemos ajudar a transformar suas ideias em realidade
           </p>
         </div>
@@ -66,8 +66,8 @@ export default function Contact() {
         <div className="grid lg:grid-cols-2 gap-12">
           {/* Contact Information */}
           <div className="space-y-8">
-            <h3 className="text-2xl font-semibold text-slate-800">Entre em Contato</h3>
-            <p className="text-slate-600 leading-relaxed">
+            <h3 className="text-2xl font-semibold text-blue-800">Entre em Contato</h3>
+            <p className="text-blue-700 leading-relaxed">
               Estamos prontos para discutir seu próximo projeto. Entre em contato conosco 
               através dos canais abaixo ou utilize o formulário ao lado para enviar sua mensagem.
             </p>
@@ -78,8 +78,8 @@ export default function Contact() {
                   <Mail className="text-white" />
                 </div>
                 <div>
-                  <h4 className="font-semibold text-slate-800">Email</h4>
-                  <p className="text-slate-600">contato@alfaeomegadev.com</p>
+                  <h4 className="font-semibold text-blue-800">Email</h4>
+                  <p className="text-blue-600">contato@alfaeomegadev.com</p>
                 </div>
               </div>
 
@@ -88,8 +88,8 @@ export default function Contact() {
                   <Phone className="text-white" />
                 </div>
                 <div>
-                  <h4 className="font-semibold text-slate-800">Telefone</h4>
-                  <p className="text-slate-600">+55 (11) 9999-9999</p>
+                  <h4 className="font-semibold text-blue-800">Telefone</h4>
+                  <p className="text-blue-600">+55 (11) 9999-9999</p>
                 </div>
               </div>
 
@@ -98,26 +98,26 @@ export default function Contact() {
                   <MapPin className="text-white" />
                 </div>
                 <div>
-                  <h4 className="font-semibold text-slate-800">Localização</h4>
-                  <p className="text-slate-600">São Paulo, SP - Brasil</p>
+                  <h4 className="font-semibold text-blue-800">Localização</h4>
+                  <p className="text-blue-600">São Paulo, SP - Brasil</p>
                 </div>
               </div>
             </div>
 
             {/* Social Media */}
             <div className="pt-6">
-              <h4 className="font-semibold text-slate-800 mb-4">Siga-nos</h4>
+              <h4 className="font-semibold text-blue-800 mb-4">Siga-nos</h4>
               <div className="flex space-x-4">
-                <a href="#" className="w-10 h-10 bg-slate-100 rounded-lg flex items-center justify-center hover:bg-primary hover:text-white transition-colors">
+                <a href="#" className="w-10 h-10 bg-blue-100 rounded-lg flex items-center justify-center hover:bg-primary hover:text-white transition-colors">
                   <Linkedin className="w-5 h-5" />
                 </a>
-                <a href="#" className="w-10 h-10 bg-slate-100 rounded-lg flex items-center justify-center hover:bg-primary hover:text-white transition-colors">
+                <a href="#" className="w-10 h-10 bg-blue-100 rounded-lg flex items-center justify-center hover:bg-primary hover:text-white transition-colors">
                   <Github className="w-5 h-5" />
                 </a>
-                <a href="#" className="w-10 h-10 bg-slate-100 rounded-lg flex items-center justify-center hover:bg-primary hover:text-white transition-colors">
+                <a href="#" className="w-10 h-10 bg-blue-100 rounded-lg flex items-center justify-center hover:bg-primary hover:text-white transition-colors">
                   <Twitter className="w-5 h-5" />
                 </a>
-                <a href="#" className="w-10 h-10 bg-slate-100 rounded-lg flex items-center justify-center hover:bg-primary hover:text-white transition-colors">
+                <a href="#" className="w-10 h-10 bg-blue-100 rounded-lg flex items-center justify-center hover:bg-primary hover:text-white transition-colors">
                   <Instagram className="w-5 h-5" />
                 </a>
               </div>
@@ -125,7 +125,7 @@ export default function Contact() {
           </div>
 
           {/* Contact Form */}
-          <Card className="bg-slate-50 rounded-xl p-8">
+          <Card className="bg-blue-50 rounded-xl p-8 border border-blue-200">
             <CardContent>
               <Form {...form}>
                 <form onSubmit={form.handleSubmit(onSubmit)} className="space-y-6">

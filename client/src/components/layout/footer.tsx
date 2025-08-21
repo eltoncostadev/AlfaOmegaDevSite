@@ -16,7 +16,7 @@ export default function Footer() {
   };
 
   return (
-    <footer className="bg-slate-800 text-white py-12">
+    <footer className="bg-blue-900 text-white py-12">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="grid md:grid-cols-4 gap-8">
           {/* Company Info */}
@@ -27,21 +27,21 @@ export default function Footer() {
               </div>
               <span className="text-lg font-bold">Alfa e Omega Dev</span>
             </div>
-            <p className="text-slate-300 mb-4 max-w-md">
+            <p className="text-blue-300 mb-4 max-w-md">
               Transformando ideias em soluções digitais inovadoras. 
               Sua parceira de confiança em desenvolvimento de software.
             </p>
             <div className="flex space-x-4">
-              <a href="#" className="text-slate-400 hover:text-white transition-colors">
+              <a href="#" className="text-blue-400 hover:text-white transition-colors">
                 <Linkedin className="w-5 h-5" />
               </a>
-              <a href="#" className="text-slate-400 hover:text-white transition-colors">
+              <a href="#" className="text-blue-400 hover:text-white transition-colors">
                 <Github className="w-5 h-5" />
               </a>
-              <a href="#" className="text-slate-400 hover:text-white transition-colors">
+              <a href="#" className="text-blue-400 hover:text-white transition-colors">
                 <Twitter className="w-5 h-5" />
               </a>
-              <a href="#" className="text-slate-400 hover:text-white transition-colors">
+              <a href="#" className="text-blue-400 hover:text-white transition-colors">
                 <Instagram className="w-5 h-5" />
               </a>
             </div>
@@ -54,7 +54,7 @@ export default function Footer() {
               <li>
                 <button 
                   onClick={() => handleNavClick("#sobre")}
-                  className="text-slate-300 hover:text-white transition-colors"
+                  className="text-blue-300 hover:text-white transition-colors"
                 >
                   Sobre Nós
                 </button>
@@ -62,7 +62,7 @@ export default function Footer() {
               <li>
                 <button 
                   onClick={() => handleNavClick("#missao")}
-                  className="text-slate-300 hover:text-white transition-colors"
+                  className="text-blue-300 hover:text-white transition-colors"
                 >
                   Missão e Visão
                 </button>
@@ -70,7 +70,7 @@ export default function Footer() {
               <li>
                 <button 
                   onClick={() => handleNavClick("#tecnologia")}
-                  className="text-slate-300 hover:text-white transition-colors"
+                  className="text-blue-300 hover:text-white transition-colors"
                 >
                   Tecnologias
                 </button>
@@ -78,7 +78,7 @@ export default function Footer() {
               <li>
                 <button 
                   onClick={() => handleNavClick("#portfolio")}
-                  className="text-slate-300 hover:text-white transition-colors"
+                  className="text-blue-300 hover:text-white transition-colors"
                 >
                   Portfólio
                 </button>
@@ -86,7 +86,7 @@ export default function Footer() {
               <li>
                 <button 
                   onClick={() => handleNavClick("#contato")}
-                  className="text-slate-300 hover:text-white transition-colors"
+                  className="text-blue-300 hover:text-white transition-colors"
                 >
                   Contato
                 </button>
@@ -97,7 +97,7 @@ export default function Footer() {
           {/* Services */}
           <div>
             <h3 className="font-semibold mb-4">Serviços</h3>
-            <ul className="space-y-2 text-slate-300">
+            <ul className="space-y-2 text-blue-300">
               <li>Consultoria em Software</li>
               <li>Desenvolvimento Web</li>
               <li>Aplicativos Mobile</li>
@@ -107,8 +107,8 @@ export default function Footer() {
           </div>
         </div>
 
-        <div className="border-t border-slate-700 mt-8 pt-8 text-center">
-          <p className="text-slate-400">
+        <div className="border-t border-blue-800 mt-8 pt-8 text-center">
+          <p className="text-blue-400">
             © 2024 Alfa e Omega Dev. Todos os direitos reservados. 
             | Consultoria especializada em desenvolvimento de software 
             | Transformando ideias em soluções digitais

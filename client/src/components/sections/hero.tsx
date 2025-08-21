@@ -16,33 +16,48 @@ export default function Hero() {
   };
 
   return (
-    <section className="bg-gradient-to-br from-slate-50 to-slate-100 py-20 lg:py-32">
-      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+    <section 
+      className="relative py-20 lg:py-32 overflow-hidden"
+      style={{
+        backgroundImage: `linear-gradient(rgba(30, 58, 138, 0.85), rgba(59, 130, 246, 0.85)), url('https://images.unsplash.com/photo-1555066931-4365d14bab8c?ixlib=rb-4.0.3&auto=format&fit=crop&w=2000&h=1200')`,
+        backgroundSize: 'cover',
+        backgroundPosition: 'center',
+        backgroundRepeat: 'no-repeat'
+      }}
+    >
+      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
         <div className="text-center">
-          <h1 className="text-4xl lg:text-6xl font-bold text-slate-800 mb-6">
-            Transformamos <span className="text-primary">Ideias</span> em{" "}
-            <span className="text-secondary">Soluções Digitais</span>
+          <h1 className="text-4xl lg:text-6xl font-bold text-white mb-6">
+            Transformamos <span className="text-blue-300">Ideias</span> em{" "}
+            <span className="text-cyan-300">Soluções Digitais</span>
           </h1>
-          <p className="text-xl text-slate-600 mb-8 max-w-3xl mx-auto">
+          <p className="text-xl text-blue-100 mb-8 max-w-3xl mx-auto">
             Somos especialistas em consultoria e desenvolvimento de software,
             oferecendo soluções inovadoras e personalizadas para impulsionar seu negócio.
           </p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
             <Button
               onClick={() => handleNavClick("#contato")}
-              className="bg-primary text-white px-8 py-3 rounded-lg font-semibold hover:bg-blue-700 transition-colors duration-200"
+              className="bg-white text-blue-900 px-8 py-3 rounded-lg font-semibold hover:bg-blue-50 transition-colors duration-200"
             >
               Fale Conosco
             </Button>
             <Button
               variant="outline"
               onClick={() => handleNavClick("#portfolio")}
-              className="border-2 border-primary text-primary px-8 py-3 rounded-lg font-semibold hover:bg-primary hover:text-white transition-colors duration-200"
+              className="border-2 border-white text-white px-8 py-3 rounded-lg font-semibold hover:bg-white hover:text-blue-900 transition-colors duration-200"
             >
               Ver Portfólio
             </Button>
           </div>
         </div>
+      </div>
+      {/* Overlay pattern for extra visual depth */}
+      <div className="absolute inset-0 opacity-10">
+        <div className="absolute inset-0" style={{
+          backgroundImage: `url('data:image/svg+xml,<svg width="60" height="60" viewBox="0 0 60 60" xmlns="http://www.w3.org/2000/svg"><g fill="none" fill-rule="evenodd"><g fill="%23ffffff" fill-opacity="0.1"><circle cx="30" cy="30" r="1"/></g></svg>')`,
+          backgroundSize: '60px 60px'
+        }}></div>
       </div>
     </section>
   );
