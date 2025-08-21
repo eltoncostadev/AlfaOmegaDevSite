@@ -43,34 +43,34 @@ export default function Portfolio() {
   ];
 
   return (
-    <section id="portfolio" className="py-20 bg-slate-50">
+    <section id="portfolio" className="py-20 bg-muted">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="text-center mb-16">
-          <h2 className="text-3xl lg:text-4xl font-bold text-blue-900 mb-4">Portfólio</h2>
-          <p className="text-lg text-blue-700 max-w-2xl mx-auto">
+          <h2 className="text-3xl lg:text-4xl font-heading font-bold text-cyan-300 mb-4">Portfólio</h2>
+          <p className="text-lg text-foreground max-w-2xl mx-auto font-sans">
             Conheça alguns dos projetos que desenvolvemos para nossos clientes
           </p>
         </div>
 
         <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
           {portfolioItems.map((item, index) => (
-            <Card key={index} className="bg-white rounded-xl overflow-hidden shadow-lg hover:shadow-xl transition-shadow duration-300">
+            <Card key={index} className="bg-card rounded-xl overflow-hidden shadow-lg hover:shadow-xl transition-shadow duration-300 border border-cyan-500/30 hover:border-cyan-400/50">
               <img 
                 src={item.image} 
                 alt={item.title} 
                 className="w-full h-48 object-cover"
               />
               <CardContent className="p-6">
-                <h3 className="text-xl font-semibold text-blue-800 mb-2">{item.title}</h3>
-                <p className="text-blue-700 mb-4">{item.description}</p>
+                <h3 className="text-xl font-heading font-semibold text-cyan-400 mb-2">{item.title}</h3>
+                <p className="text-card-foreground mb-4 font-sans">{item.description}</p>
                 <div className="flex flex-wrap gap-2 mb-4">
                   {item.technologies.map((tech, techIndex) => (
-                    <Badge key={techIndex} variant="secondary" className="text-xs">
+                    <Badge key={techIndex} variant="secondary" className="text-xs bg-cyan-500/20 text-cyan-300 border-cyan-500/30">
                       {tech}
                     </Badge>
                   ))}
                 </div>
-                <Button variant="link" className="text-primary font-medium hover:text-blue-700 p-0">
+                <Button variant="link" className="text-primary font-heading font-medium hover:text-cyan-300 p-0">
                   Ver Detalhes →
                 </Button>
               </CardContent>
@@ -79,7 +79,7 @@ export default function Portfolio() {
         </div>
 
         <div className="text-center mt-12">
-          <Button className="bg-primary text-white px-8 py-3 rounded-lg font-semibold hover:bg-blue-700 transition-colors duration-200">
+          <Button className="bg-primary text-white px-8 py-3 rounded-lg font-heading font-semibold hover:bg-blue-600 transition-colors duration-200">
             Ver Todos os Projetos
           </Button>
         </div>

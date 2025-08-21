@@ -1,28 +1,28 @@
-@import url('https://fonts.googleapis.com/css2?family=Inter:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Orbitron:wght@400;500;600;700;800;900&family=Exo+2:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
 
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
 
 :root {
-  --background: hsl(214 32% 96%);
-  --foreground: hsl(215 25% 27%);
-  --card: hsl(210 40% 98%);
-  --card-foreground: hsl(215 25% 27%);
-  --popover: hsl(210 40% 98%);
-  --popover-foreground: hsl(215 25% 27%);
+  --background: hsl(222 39% 11%);
+  --foreground: hsl(180 100% 90%);
+  --card: hsl(220 35% 15%);
+  --card-foreground: hsl(180 100% 90%);
+  --popover: hsl(220 35% 15%);
+  --popover-foreground: hsl(180 100% 90%);
   --primary: hsl(214 84% 56%);
-  --primary-foreground: hsl(210 40% 98%);
+  --primary-foreground: hsl(222 39% 11%);
   --secondary: hsl(208 100% 47%);
   --secondary-foreground: hsl(210 40% 98%);
-  --muted: hsl(214 32% 91%);
-  --muted-foreground: hsl(215 16% 47%);
+  --muted: hsl(215 35% 18%);
+  --muted-foreground: hsl(180 50% 70%);
   --accent: hsl(206 100% 50%);
   --accent-foreground: hsl(210 40% 98%);
   --destructive: hsl(0 84.2% 60.2%);
   --destructive-foreground: hsl(210 40% 98%);
-  --border: hsl(214 32% 87%);
-  --input: hsl(214 32% 87%);
+  --border: hsl(215 35% 25%);
+  --input: hsl(215 35% 25%);
   --ring: hsl(214 84% 56%);
   --chart-1: hsl(214 76% 61%);
   --chart-2: hsl(207 58% 39%);
@@ -30,7 +30,8 @@
   --chart-4: hsl(206 74% 66%);
   --chart-5: hsl(220 87% 67%);
   --radius: 0.5rem;
-  --font-sans: 'Inter', system-ui, sans-serif;
+  --font-sans: 'Exo 2', system-ui, sans-serif;
+  --font-heading: 'Orbitron', system-ui, sans-serif;
 }
 
 .dark {

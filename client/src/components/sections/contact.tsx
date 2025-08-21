@@ -54,11 +54,11 @@ export default function Contact() {
   };
 
   return (
-    <section id="contato" className="py-20 bg-white">
+    <section id="contato" className="py-20 bg-background">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="text-center mb-16">
-          <h2 className="text-3xl lg:text-4xl font-bold text-blue-900 mb-4">Fale Conosco</h2>
-          <p className="text-lg text-blue-700 max-w-2xl mx-auto">
+          <h2 className="text-3xl lg:text-4xl font-heading font-bold text-cyan-300 mb-4">Fale Conosco</h2>
+          <p className="text-lg text-foreground max-w-2xl mx-auto font-sans">
             Vamos conversar sobre como podemos ajudar a transformar suas ideias em realidade
           </p>
         </div>
@@ -66,8 +66,8 @@ export default function Contact() {
         <div className="grid lg:grid-cols-2 gap-12">
           {/* Contact Information */}
           <div className="space-y-8">
-            <h3 className="text-2xl font-semibold text-blue-800">Entre em Contato</h3>
-            <p className="text-blue-700 leading-relaxed">
+            <h3 className="text-2xl font-heading font-semibold text-cyan-400">Entre em Contato</h3>
+            <p className="text-foreground leading-relaxed font-sans">
               Estamos prontos para discutir seu próximo projeto. Entre em contato conosco 
               através dos canais abaixo ou utilize o formulário ao lado para enviar sua mensagem.
             </p>
@@ -78,8 +78,8 @@ export default function Contact() {
                   <Mail className="text-white" />
                 </div>
                 <div>
-                  <h4 className="font-semibold text-blue-800">Email</h4>
-                  <p className="text-blue-600">contato@alfaeomegadev.com</p>
+                  <h4 className="font-heading font-semibold text-cyan-300">Email</h4>
+                  <p className="text-muted-foreground font-sans">contato@alfaeomegadev.com</p>
                 </div>
               </div>
 
@@ -88,8 +88,8 @@ export default function Contact() {
                   <Phone className="text-white" />
                 </div>
                 <div>
-                  <h4 className="font-semibold text-blue-800">Telefone</h4>
-                  <p className="text-blue-600">+55 (11) 9999-9999</p>
+                  <h4 className="font-heading font-semibold text-cyan-300">Telefone</h4>
+                  <p className="text-muted-foreground font-sans">+55 (11) 9999-9999</p>
                 </div>
               </div>
 
@@ -98,26 +98,26 @@ export default function Contact() {
                   <MapPin className="text-white" />
                 </div>
                 <div>
-                  <h4 className="font-semibold text-blue-800">Localização</h4>
-                  <p className="text-blue-600">São Paulo, SP - Brasil</p>
+                  <h4 className="font-heading font-semibold text-cyan-300">Localização</h4>
+                  <p className="text-muted-foreground font-sans">São Paulo, SP - Brasil</p>
                 </div>
               </div>
             </div>
 
             {/* Social Media */}
             <div className="pt-6">
-              <h4 className="font-semibold text-blue-800 mb-4">Siga-nos</h4>
+              <h4 className="font-heading font-semibold text-cyan-300 mb-4">Siga-nos</h4>
               <div className="flex space-x-4">
-                <a href="#" className="w-10 h-10 bg-blue-100 rounded-lg flex items-center justify-center hover:bg-primary hover:text-white transition-colors">
+                <a href="#" className="w-10 h-10 bg-card rounded-lg flex items-center justify-center hover:bg-primary hover:text-white transition-colors border border-cyan-500/30">
                   <Linkedin className="w-5 h-5" />
                 </a>
-                <a href="#" className="w-10 h-10 bg-blue-100 rounded-lg flex items-center justify-center hover:bg-primary hover:text-white transition-colors">
+                <a href="#" className="w-10 h-10 bg-card rounded-lg flex items-center justify-center hover:bg-primary hover:text-white transition-colors border border-cyan-500/30">
                   <Github className="w-5 h-5" />
                 </a>
-                <a href="#" className="w-10 h-10 bg-blue-100 rounded-lg flex items-center justify-center hover:bg-primary hover:text-white transition-colors">
+                <a href="#" className="w-10 h-10 bg-card rounded-lg flex items-center justify-center hover:bg-primary hover:text-white transition-colors border border-cyan-500/30">
                   <Twitter className="w-5 h-5" />
                 </a>
-                <a href="#" className="w-10 h-10 bg-blue-100 rounded-lg flex items-center justify-center hover:bg-primary hover:text-white transition-colors">
+                <a href="#" className="w-10 h-10 bg-card rounded-lg flex items-center justify-center hover:bg-primary hover:text-white transition-colors border border-cyan-500/30">
                   <Instagram className="w-5 h-5" />
                 </a>
               </div>
@@ -125,7 +125,7 @@ export default function Contact() {
           </div>
 
           {/* Contact Form */}
-          <Card className="bg-blue-50 rounded-xl p-8 border border-blue-200">
+          <Card className="bg-card rounded-xl p-8 border border-cyan-500/30">
             <CardContent>
               <Form {...form}>
                 <form onSubmit={form.handleSubmit(onSubmit)} className="space-y-6">
@@ -135,9 +135,9 @@ export default function Contact() {
                       name="nome"
                       render={({ field }) => (
                         <FormItem>
-                          <FormLabel>Nome *</FormLabel>
+                          <FormLabel className="font-heading text-cyan-300">Nome *</FormLabel>
                           <FormControl>
-                            <Input placeholder="Seu nome completo" {...field} />
+                            <Input placeholder="Seu nome completo" {...field} className="font-sans" />
                           </FormControl>
                           <FormMessage />
                         </FormItem>
@@ -148,9 +148,9 @@ export default function Contact() {
                       name="empresa"
                       render={({ field }) => (
                         <FormItem>
-                          <FormLabel>Empresa</FormLabel>
+                          <FormLabel className="font-heading text-cyan-300">Empresa</FormLabel>
                           <FormControl>
-                            <Input placeholder="Nome da empresa" {...field} />
+                            <Input placeholder="Nome da empresa" {...field} className="font-sans" />
                           </FormControl>
                           <FormMessage />
                         </FormItem>
@@ -164,9 +164,9 @@ export default function Contact() {
                       name="email"
                       render={({ field }) => (
                         <FormItem>
-                          <FormLabel>Email *</FormLabel>
+                          <FormLabel className="font-heading text-cyan-300">Email *</FormLabel>
                           <FormControl>
-                            <Input type="email" placeholder="seu@email.com" {...field} />
+                            <Input type="email" placeholder="seu@email.com" {...field} className="font-sans" />
                           </FormControl>
                           <FormMessage />
                         </FormItem>
@@ -177,9 +177,9 @@ export default function Contact() {
                       name="telefone"
                       render={({ field }) => (
                         <FormItem>
-                          <FormLabel>Telefone</FormLabel>
+                          <FormLabel className="font-heading text-cyan-300">Telefone</FormLabel>
                           <FormControl>
-                            <Input placeholder="(11) 99999-9999" {...field} />
+                            <Input placeholder="(11) 99999-9999" {...field} className="font-sans" />
                           </FormControl>
                           <FormMessage />
                         </FormItem>
@@ -192,10 +192,10 @@ export default function Contact() {
                     name="servico"
                     render={({ field }) => (
                       <FormItem>
-                        <FormLabel>Tipo de Serviço</FormLabel>
+                        <FormLabel className="font-heading text-cyan-300">Tipo de Serviço</FormLabel>
                         <Select onValueChange={field.onChange} defaultValue={field.value}>
                           <FormControl>
-                            <SelectTrigger>
+                            <SelectTrigger className="font-sans">
                               <SelectValue placeholder="Selecione um serviço" />
                             </SelectTrigger>
                           </FormControl>
@@ -217,11 +217,11 @@ export default function Contact() {
                     name="mensagem"
                     render={({ field }) => (
                       <FormItem>
-                        <FormLabel>Mensagem *</FormLabel>
+                        <FormLabel className="font-heading text-cyan-300">Mensagem *</FormLabel>
                         <FormControl>
                           <Textarea 
                             placeholder="Conte-nos sobre seu projeto..." 
-                            className="resize-none"
+                            className="resize-none font-sans"
                             rows={5}
                             {...field} 
                           />
@@ -233,7 +233,7 @@ export default function Contact() {
 
                   <Button 
                     type="submit" 
-                    className="w-full bg-primary text-white py-3 px-6 rounded-lg font-semibold hover:bg-blue-700 transition-colors duration-200"
+                    className="w-full bg-primary text-white py-3 px-6 rounded-lg font-heading font-semibold hover:bg-blue-600 transition-colors duration-200"
                     disabled={contactMutation.isPending}
                   >
                     {contactMutation.isPending ? "Enviando..." : "Enviar Mensagem"}

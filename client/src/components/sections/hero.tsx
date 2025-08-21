@@ -27,25 +27,25 @@ export default function Hero() {
     >
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
         <div className="text-center">
-          <h1 className="text-4xl lg:text-6xl font-bold text-white mb-6">
-            Transformamos <span className="text-blue-300">Ideias</span> em{" "}
-            <span className="text-cyan-300">Soluções Digitais</span>
+          <h1 className="text-4xl lg:text-6xl font-heading font-bold text-white mb-6">
+            Transformamos <span className="text-cyan-300">Ideias</span> em{" "}
+            <span className="text-blue-300">Soluções Digitais</span>
           </h1>
-          <p className="text-xl text-blue-100 mb-8 max-w-3xl mx-auto">
+          <p className="text-xl text-cyan-100 mb-8 max-w-3xl mx-auto font-sans">
             Somos especialistas em consultoria e desenvolvimento de software,
             oferecendo soluções inovadoras e personalizadas para impulsionar seu negócio.
           </p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
             <Button
               onClick={() => handleNavClick("#contato")}
-              className="bg-white text-blue-900 px-8 py-3 rounded-lg font-semibold hover:bg-blue-50 transition-colors duration-200"
+              className="bg-cyan-400 text-slate-900 px-8 py-3 rounded-lg font-semibold hover:bg-cyan-300 transition-colors duration-200 font-heading"
             >
               Fale Conosco
             </Button>
             <Button
               variant="outline"
               onClick={() => handleNavClick("#portfolio")}
-              className="border-2 border-white text-white px-8 py-3 rounded-lg font-semibold hover:bg-white hover:text-blue-900 transition-colors duration-200"
+              className="border-2 border-cyan-300 text-cyan-300 px-8 py-3 rounded-lg font-semibold hover:bg-cyan-300 hover:text-slate-900 transition-colors duration-200 font-heading"
             >
               Ver Portfólio
             </Button>

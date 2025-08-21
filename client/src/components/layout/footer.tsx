@@ -16,7 +16,7 @@ export default function Footer() {
   };
 
   return (
-    <footer className="bg-blue-900 text-white py-12">
+    <footer className="bg-gradient-to-r from-slate-900 via-blue-900 to-slate-900 text-white py-12 border-t border-cyan-300/30">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="grid md:grid-cols-4 gap-8">
           {/* Company Info */}
@@ -25,23 +25,23 @@ export default function Footer() {
               <div className="w-8 h-8 bg-gradient-to-br from-primary to-secondary rounded-lg flex items-center justify-center">
                 <Code className="text-white" />
               </div>
-              <span className="text-lg font-bold">Alfa e Omega Dev</span>
+              <span className="text-lg font-heading font-bold text-cyan-300">Alfa e Omega Dev</span>
             </div>
-            <p className="text-blue-300 mb-4 max-w-md">
+            <p className="text-cyan-200 mb-4 max-w-md font-sans">
               Transformando ideias em soluções digitais inovadoras. 
               Sua parceira de confiança em desenvolvimento de software.
             </p>
             <div className="flex space-x-4">
-              <a href="#" className="text-blue-400 hover:text-white transition-colors">
+              <a href="#" className="text-cyan-400 hover:text-white transition-colors">
                 <Linkedin className="w-5 h-5" />
               </a>
-              <a href="#" className="text-blue-400 hover:text-white transition-colors">
+              <a href="#" className="text-cyan-400 hover:text-white transition-colors">
                 <Github className="w-5 h-5" />
               </a>
-              <a href="#" className="text-blue-400 hover:text-white transition-colors">
+              <a href="#" className="text-cyan-400 hover:text-white transition-colors">
                 <Twitter className="w-5 h-5" />
               </a>
-              <a href="#" className="text-blue-400 hover:text-white transition-colors">
+              <a href="#" className="text-cyan-400 hover:text-white transition-colors">
                 <Instagram className="w-5 h-5" />
               </a>
             </div>
@@ -49,12 +49,12 @@ export default function Footer() {
 
           {/* Quick Links */}
           <div>
-            <h3 className="font-semibold mb-4">Links Rápidos</h3>
+            <h3 className="font-heading font-semibold mb-4 text-cyan-300">Links Rápidos</h3>
             <ul className="space-y-2">
               <li>
                 <button 
                   onClick={() => handleNavClick("#sobre")}
-                  className="text-blue-300 hover:text-white transition-colors"
+                  className="text-cyan-200 hover:text-white transition-colors font-sans"
                 >
                   Sobre Nós
                 </button>
@@ -62,7 +62,7 @@ export default function Footer() {
               <li>
                 <button 
                   onClick={() => handleNavClick("#missao")}
-                  className="text-blue-300 hover:text-white transition-colors"
+                  className="text-cyan-200 hover:text-white transition-colors font-sans"
                 >
                   Missão e Visão
                 </button>
@@ -70,7 +70,7 @@ export default function Footer() {
               <li>
                 <button 
                   onClick={() => handleNavClick("#tecnologia")}
-                  className="text-blue-300 hover:text-white transition-colors"
+                  className="text-cyan-200 hover:text-white transition-colors font-sans"
                 >
                   Tecnologias
                 </button>
@@ -78,7 +78,7 @@ export default function Footer() {
               <li>
                 <button 
                   onClick={() => handleNavClick("#portfolio")}
-                  className="text-blue-300 hover:text-white transition-colors"
+                  className="text-cyan-200 hover:text-white transition-colors font-sans"
                 >
                   Portfólio
                 </button>
@@ -86,7 +86,7 @@ export default function Footer() {
               <li>
                 <button 
                   onClick={() => handleNavClick("#contato")}
-                  className="text-blue-300 hover:text-white transition-colors"
+                  className="text-cyan-200 hover:text-white transition-colors font-sans"
                 >
                   Contato
                 </button>
@@ -96,8 +96,8 @@ export default function Footer() {
 
           {/* Services */}
           <div>
-            <h3 className="font-semibold mb-4">Serviços</h3>
-            <ul className="space-y-2 text-blue-300">
+            <h3 className="font-heading font-semibold mb-4 text-cyan-300">Serviços</h3>
+            <ul className="space-y-2 text-cyan-200 font-sans">
               <li>Consultoria em Software</li>
               <li>Desenvolvimento Web</li>
               <li>Aplicativos Mobile</li>
@@ -107,8 +107,8 @@ export default function Footer() {
           </div>
         </div>
 
-        <div className="border-t border-blue-800 mt-8 pt-8 text-center">
-          <p className="text-blue-400">
+        <div className="border-t border-cyan-400/30 mt-8 pt-8 text-center">
+          <p className="text-cyan-300 font-sans">
             © 2024 Alfa e Omega Dev. Todos os direitos reservados. 
             | Consultoria especializada em desenvolvimento de software 
             | Transformando ideias em soluções digitais
