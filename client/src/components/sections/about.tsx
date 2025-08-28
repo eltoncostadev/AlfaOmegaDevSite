@@ -24,11 +24,11 @@ export default function About() {
               a Alfa e Omega Dev nasceu da paixão por transformar desafios complexos em soluções elegantes e eficientes.
             </p>
             <p className="text-foreground leading-relaxed font-sans">
-              Nossa equipe é composta por desenvolvedores experientes, arquitetos de software e consultores especializados 
+              Nossa equipe é composta por profissionais experientes, arquitetos de software e consultores especializados 
               que trabalham incansavelmente para entregar resultados excepcionais.
             </p>
             
-            <div className="grid grid-cols-2 gap-6 mt-8">
+            {/* <div className="grid grid-cols-2 gap-6 mt-8">
               <div className="text-center">
                 <div className="text-3xl font-heading font-bold text-primary">50+</div>
                 <div className="text-cyan-200 font-sans">Projetos Entregues</div>
@@ -37,7 +37,7 @@ export default function About() {
                 <div className="text-3xl font-heading font-bold text-secondary">5+</div>
                 <div className="text-cyan-200 font-sans">Anos de Experiência</div>
               </div>
-            </div>
+            </div>*/}
           </div>
         </div>
       </div>

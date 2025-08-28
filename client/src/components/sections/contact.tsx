@@ -79,7 +79,7 @@ export default function Contact() {
                 </div>
                 <div>
                   <h4 className="font-heading font-semibold text-cyan-300">Email</h4>
-                  <p className="text-muted-foreground font-sans">contato@alfaeomegadev.com</p>
+                  <p className="text-muted-foreground font-sans">contato@alfaeomegadev.com.br</p>
                 </div>
               </div>
 
@@ -89,7 +89,7 @@ export default function Contact() {
                 </div>
                 <div>
                   <h4 className="font-heading font-semibold text-cyan-300">Telefone</h4>
-                  <p className="text-muted-foreground font-sans">+55 (11) 9999-9999</p>
+                  <p className="text-muted-foreground font-sans">+55 (34) 99234-3121</p>
                 </div>
               </div>
 
@@ -99,7 +99,7 @@ export default function Contact() {
                 </div>
                 <div>
                   <h4 className="font-heading font-semibold text-cyan-300">Localização</h4>
-                  <p className="text-muted-foreground font-sans">São Paulo, SP - Brasil</p>
+                  <p className="text-muted-foreground font-sans">Uberlândia, MG - Brasil</p>
                 </div>
               </div>
             </div>
@@ -108,7 +108,7 @@ export default function Contact() {
             <div className="pt-6">
               <h4 className="font-heading font-semibold text-cyan-300 mb-4">Siga-nos</h4>
               <div className="flex space-x-4">
-                <a href="#" className="w-10 h-10 bg-card rounded-lg flex items-center justify-center hover:bg-primary hover:text-white transition-colors border border-cyan-500/30">
+                <a href="https://www.linkedin.com/company/alfa-e-omega-dev" className="w-10 h-10 bg-card rounded-lg flex items-center justify-center hover:bg-primary hover:text-white transition-colors border border-cyan-500/30">
                   <Linkedin className="w-5 h-5" />
                 </a>
                 <a href="#" className="w-10 h-10 bg-card rounded-lg flex items-center justify-center hover:bg-primary hover:text-white transition-colors border border-cyan-500/30">

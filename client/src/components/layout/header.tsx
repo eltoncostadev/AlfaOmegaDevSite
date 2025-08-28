@@ -2,13 +2,14 @@ import { useState, useEffect } from "react";
 import { Code, Menu, X } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import { Sheet, SheetContent, SheetTrigger } from "@/components/ui/sheet";
-import logoImage from "@assets/logo-topo_1755810518193.png";
+import logoImage from "../../../assets/logo-topo.png";
 
 const navigationItems = [
   { href: "#sobre", label: "Sobre Nós" },
   { href: "#missao", label: "Missão e Visão" },
-  { href: "#tecnologia", label: "Tecnologia" },
-  { href: "#portfolio", label: "Portfólio" },
+  // { href: "#tecnologia", label: "Tecnologia" },
+  { href: "#servicos", label: "Serviços" },
+  // { href: "#portfolio", label: "Portfólio" },
   { href: "#contato", label: "Fale Conosco" },
 ];
 

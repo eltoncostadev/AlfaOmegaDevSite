@@ -5,6 +5,7 @@ import About from "@/components/sections/about";
 import Mission from "@/components/sections/mission";
 import Technology from "@/components/sections/technology";
 import Portfolio from "@/components/sections/portfolio";
+import Services from "@/components/sections/services"
 import Contact from "@/components/sections/contact";
 
 export default function Home() {
@@ -15,8 +16,9 @@ export default function Home() {
         <Hero />
         <About />
         <Mission />
-        <Technology />
-        <Portfolio />
+        <Services />
+        {/* <Technology />
+        <Portfolio /> */}
         <Contact />
       </main>
       <Footer />

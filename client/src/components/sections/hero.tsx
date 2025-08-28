@@ -42,13 +42,13 @@ export default function Hero() {
             >
               Fale Conosco
             </Button>
-            <Button
+            {/* <Button
               variant="outline"
               onClick={() => handleNavClick("#portfolio")}
               className="border-2 border-cyan-300 text-cyan-300 px-8 py-3 rounded-lg font-semibold hover:bg-cyan-300 hover:text-slate-900 transition-colors duration-200 font-heading"
             >
               Ver Portfólio
-            </Button>
+            </Button> */}
           </div>
         </div>
       </div>
