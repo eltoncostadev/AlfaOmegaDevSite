@@ -1,9 +1,10 @@
 ﻿import { FaCode, FaCogs, FaSyncAlt, FaLightbulb, FaChartBar, FaDatabase, FaCloud, FaLock, FaTools, FaUserGraduate, FaNetworkWired } from "react-icons/fa";
 import { MdOutlineArchitecture, MdOutlineIntegrationInstructions, MdOutlineSupportAgent } from "react-icons/md";
 import { GiUpgrade } from "react-icons/gi";
-import { Card, CardContent, Typography, Box, IconButton } from "@mui/material";
+import { Card, CardContent } from "@/components/ui/card";
+import { Button } from "@/components/ui/button";
 import { useRef } from "react";
-import { ChevronLeft, ChevronRight } from "@mui/icons-material";
+import { ChevronLeft, ChevronRight } from "lucide-react";
 
 const services = [
   {
@@ -122,103 +123,43 @@ export default function ServicesSection() {
           </p>
         </div>
         <div className="relative w-full mt-4">
-          <IconButton
+          <Button
             onClick={() => scroll("left")}
-            sx={{
-              position: "absolute",
-              left: 0,
-              top: "50%",
-              zIndex: 2,
-              transform: "translateY(-50%)",
-              background: "#fff",
-              boxShadow: 2,
-              display: { xs: "none", md: "flex" },
-            }}
+            variant="outline"
+            size="icon"
+            className="absolute left-0 top-1/2 z-10 -translate-y-1/2 bg-white shadow-lg hidden md:flex"
           >
-            <ChevronLeft />
-          </IconButton>
-          <Box
+            <ChevronLeft className="h-4 w-4" />
+          </Button>
+          <div
             ref={scrollRef}
-            sx={{
-              display: "flex",
-              overflowX: "auto",
-              gap: 3,
-              scrollBehavior: "smooth",
-              px: { xs: 1, sm: 2, md: 6 },
-              py: 2,
-            }}
+            className="flex overflow-x-auto gap-6 scroll-smooth px-1 sm:px-2 md:px-6 py-2"
           >
             {services.map((service, idx) => (
               <Card
                 key={idx}
-                sx={{
-                  minWidth: { xs: 300, sm: 300, md: 300 },
-                  maxWidth: { xs: 300, sm: 300, md: 300 },
-                  minHeight: { xs: 300, sm: 300, md: 300 },
-                  maxHeight: { xs: 300, sm: 300, md: 300 },
-                  flex: "0 0 auto",
-                  display: "flex",
-                  flexDirection: "column",
-                  alignItems: "flex-start",
-                  p: 2,
-                  height: "100%",
-                  boxSizing: "border-box",
-                  fontFamily: "inherit",
-                  justifyContent: "flex-start",
-                  backgroundColor: "#172133",
-                  border: "1px solid #1ec6e6",
-                  color: "#7ff6ff",
-                  borderRadius: "12px",
-                  boxShadow: "0 2px 16px 0 rgba(30,198,230,0.08)",
-                }}
+                className="min-w-[300px] max-w-[300px] min-h-[300px] max-h-[300px] flex-none flex flex-col items-start p-4 h-full justify-start bg-[#172133] border border-[#1ec6e6] text-[#7ff6ff] rounded-xl shadow-[0_2px_16px_0_rgba(30,198,230,0.08)]"
               >
-                <Box sx={{ mb: 1 }}>{service.icon}</Box>
-                <CardContent sx={{ p: 0, fontFamily: "inherit", flex: 1 }}>
-                  <Typography
-                    variant="h6"
-                    gutterBottom
-                    sx={{
-                      fontFamily: "inherit",
-                      fontWeight: 600,
-                      fontSize: { xs: "1.05rem", sm: "1.15rem", md: "1.25rem" },
-                      color: "#1ec6e6",
-                      textAlign: "center",
-                    }}
-                  >
+                <div className="mb-2">{service.icon}</div>
+                <CardContent className="p-0 flex-1 flex flex-col">
+                  <h3 className="font-semibold text-base sm:text-lg md:text-xl text-[#1ec6e6] text-center mb-2">
                     {service.title}
-                  </Typography>
-                  <Typography
-                    variant="body2"
-                    sx={{
-                      fontFamily: "inherit",
-                      fontSize: { xs: "0.92rem", sm: "1rem" },
-                      wordBreak: "break-word",
-                      whiteSpace: "normal",
-                      color: "#7ff6ff",
-                      textAlign: "center",
-                    }}
-                  >
+                  </h3>
+                  <p className="text-sm sm:text-base break-words text-[#7ff6ff] text-center">
                     {service.description}
-                  </Typography>
+                  </p>
                 </CardContent>
               </Card>
             ))}
-          </Box>
-          <IconButton
+          </div>
+          <Button
             onClick={() => scroll("right")}
-            sx={{
-              position: "absolute",
-              right: 0,
-              top: "50%",
-              zIndex: 2,
-              transform: "translateY(-50%)",
-              background: "#fff",
-              boxShadow: 2,
-              display: { xs: "none", md: "flex" },
-            }}
+            variant="outline"
+            size="icon"
+            className="absolute right-0 top-1/2 z-10 -translate-y-1/2 bg-white shadow-lg hidden md:flex"
           >
-            <ChevronRight />
-          </IconButton>
+            <ChevronRight className="h-4 w-4" />
+          </Button>
         </div>
       </div>
     </section>
