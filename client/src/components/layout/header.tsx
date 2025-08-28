@@ -25,7 +25,7 @@ export default function Header() {
 
       window.scrollTo({
         top: offsetPosition,
-        behavior: "smooth"
+        behavior: "smooth",
       });
     }
     setIsOpen(false);
@@ -34,7 +34,7 @@ export default function Header() {
   return (
     <header className="fixed top-0 left-0 right-0 bg-gradient-to-r from-slate-900 via-blue-900 to-slate-900 backdrop-blur-sm border-b border-cyan-300/30 z-50 shadow-lg">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-        <div className="relative flex items-center h-20">
+        <div className="flex justify-between items-center h-20">
           {/* Navigation Menu (Left) - Desktop */}
           <nav className="hidden md:flex space-x-8">
             {navigationItems.map((item) => (
@@ -51,11 +51,18 @@ export default function Header() {
           {/* Mobile Menu */}
           <Sheet open={isOpen} onOpenChange={setIsOpen}>
             <SheetTrigger asChild>
-              <Button variant="ghost" size="icon" className="md:hidden text-cyan-200 hover:text-cyan-100">
+              <Button
+                variant="ghost"
+                size="icon"
+                className="md:hidden text-cyan-200 hover:text-cyan-100"
+              >
                 <Menu className="h-6 w-6" />
               </Button>
             </SheetTrigger>
-            <SheetContent side="left" className="w-[300px] sm:w-[400px] bg-slate-900 border-cyan-300/30">
+            <SheetContent
+              side="left"
+              className="w-[300px] sm:w-[400px] bg-slate-900 border-cyan-300/30"
+            >
               <nav className="flex flex-col space-y-4 mt-8">
                 {navigationItems.map((item) => (
                   <button
@@ -70,12 +77,12 @@ export default function Header() {
             </SheetContent>
           </Sheet>
 
-          {/* Logo (Center) */}
-          <div className="absolute left-1/2 transform -translate-x-1/2 flex items-center">
-            <img 
-              src={logoImage} 
-              alt="Alfa e Omega Dev Logo" 
-              className="h-20 w-auto sm:h-22 md:h-24 lg:h-28"
+          {/* Logo (Right) */}
+          <div className="flex items-center">
+            <img
+              src={logoImage}
+              alt="Alfa e Omega Dev Logo"
+              className="h-16 w-auto sm:h-18 md:h-20 lg:h-24"
             />
           </div>
         </div>
