@@ -72,13 +72,11 @@ export default function Header() {
 
           {/* Logo (Center) */}
           <div className="absolute left-1/2 transform -translate-x-1/2 flex items-center">
-            <div className="bg-white/10 backdrop-blur-sm rounded-xl p-3 border border-cyan-300/20 shadow-lg shadow-cyan-300/20">
-              <img 
-                src={logoImage} 
-                alt="Alfa e Omega Dev Logo" 
-                className="h-20 w-auto sm:h-22 md:h-24 lg:h-28 drop-shadow-lg"
-              />
-            </div>
+            <img 
+              src={logoImage} 
+              alt="Alfa e Omega Dev Logo" 
+              className="h-20 w-auto sm:h-22 md:h-24 lg:h-28"
+            />
           </div>
         </div>
       </div>
