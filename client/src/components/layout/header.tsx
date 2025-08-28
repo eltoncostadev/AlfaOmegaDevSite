@@ -2,7 +2,7 @@ import { useState, useEffect } from "react";
 import { Code, Menu, X } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import { Sheet, SheetContent, SheetTrigger } from "@/components/ui/sheet";
-import logoImage from "@assets/logo-topo_1755810518193.png";
+import logoImage from "../../../assets/logo-topo.png";
 
 const navigationItems = [
   { href: "#sobre", label: "Sobre Nós" },
@@ -82,7 +82,7 @@ export default function Header() {
             <img
               src={logoImage}
               alt="Alfa e Omega Dev Logo"
-              className="h-16 w-auto sm:h-18 md:h-20 lg:h-24"
+              className="h-16 w-auto sm:h-18 md:h-20 lg:h-16"
             />
           </div>
         </div>
