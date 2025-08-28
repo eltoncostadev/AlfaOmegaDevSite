@@ -2,7 +2,7 @@ import { useState, useEffect } from "react";
 import { Code, Menu, X } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import { Sheet, SheetContent, SheetTrigger } from "@/components/ui/sheet";
-import logoImage from "../../../assets/logo-topo.png";
+import logoImage from "@assets/logo-topo_1755810518193.png";
 
 const navigationItems = [
   { href: "#sobre", label: "Sobre Nós" },
